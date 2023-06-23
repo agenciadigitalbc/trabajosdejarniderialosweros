@@ -1,0 +1,63 @@
+title: Pacific Sun Real Estate
+email: info@pacificsunrealestate.com.mx
+phone1: +52-646-947-7802
+phone2: +1-209-843-1531
+schedule: Lun - Vie 10:00 - 18:00  /  Sabado 10:00 - 14:00
+address:  Av. Dr Pedro Loyola 193, 22887 Ensenada
+description: Pacific Sun Real Estate Somos un equipo dedicado a bienes raíces y alojamientos vacacionales, con más de 6 años de experiencia.
+baseurl: "" 
+url: "https://pacificsunrealestate.com.mx" 
+google_analytics: G-77MT8S8LLL
+lang: es-mx
+
+social:
+  name: Pacific Sun Real Estate
+  links:
+facebook_username: https://www.facebook.com/pacificsunensenada
+instagram_username:  https://www.instagram.com/pacificsun_realestate
+youtube_username: https://www.youtube.com/@pacificsunrealestate
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag  
+  - jekyll-sitemap
+
+twitter:
+  username: CentroRosarito
+  card: summary
+  
+collections:
+  agentes:
+    output: true
+  casasenventa:
+    output: true
+  casasenrenta:
+    output: true
+    
+exclude:
+  - HTML-MASTER/
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      lang: "es-mx"
+      lazy: true
+      image: 
+        path: /images/pacificsun/og-img.webp
+        height: 512
+        width: 512
+      author: Rosarito Centro  

@@ -1,0 +1,113 @@
+---
+title: Agentes
+layout: default
+---
+
+<!-- LISTING LIST -->
+<section class="profile__agents">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <aside class=" wrapper__list__category">
+                    <!-- CATEGORY -->
+                    <div class="widget widget__archive">
+                        <div class="widget__title">
+                            <h5 class="text-dark mb-0 text-center">Categorias</h5>
+                        </div>
+                        <ul class="list-unstyled">
+                            {% for category in site.categories %}
+                            {% capture category_name %}{{ category | first }}{% endcapture %}
+                            <li>
+                                <a href="categorias.html" class="text-capitalize">
+                                    {{ category_name }}
+                                    <span class="badge badge-primary">{{site.categories[category_name] | size}}</span>
+                                </a>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                    <!-- END CATEGORY -->
+                </aside>
+                <!--div class="download mb-0">
+                    <h5 class="text-center text-capitalize">Documentación</h5>
+                    <div class="download__item">
+                        <a href="#" target="_blank"><i class="fa fa-file-pdf-o mr-3" aria-hidden="true"></i>Download
+                            Document.Pdf</a>
+                    </div>
+                    <div class="download__item">
+                        <a href="#" target="_blank"><i class="fa fa-file-word-o mr-3"
+                                aria-hidden="true"></i>Presentation
+                            2016-17.Doc</a>
+                    </div>
+                </div-->
+            </div>
+            <div class="col-lg-8">
+                <div class="row">
+                    {% for agente in site.agentes %}
+                    <div class="col-lg-6">
+                        <div class="cards mt-0">
+                            <div class="profile__agents-header">
+                                <a href="#" class="profile__agents-avatar">
+                                    <img src="{{ agente.foto }}" alt="{{ agente.nombre }}" class="img-fluid">
+                                    <div class="total__property-agent">Agente</div>
+                                </a>
+                            </div>
+                            <div class="profile__agents-body">
+                                <div class="profile__agents-info">
+                                    <h5 class="text-capitalize">
+                                        <a href="{{ agente.url }}" target="_blank">{{ agente.nombre}}</a>
+                                    </h5>
+                                    <p class="text-capitalize mb-1">{{ agente.nombre}}</p>
+
+                                    <ul class="list-unstyled mt-2">
+                                        <!--li><a href="#" class="text-capitalize"><span><i class="fa fa-building"></i>
+                                                    office :</span> 123 456
+                                                789</a>
+                                        </li-->
+                                        <li><a href="tel:{{ agente.telefono }}" class="text-capitalize"><span><i
+                                                        class="fa fa-phone"></i> mobile
+                                                    :</span> {{ agente.telefono }}</a></li>
+                                        <!--li><a href="#" class="text-capitalize"><span><i class="fa fa-fax"></i> fax :
+                                                </span> 342 655</a></li-->
+                                        <li><a href="mailto:info@pacificsunrealestate.com.mx"
+                                                class="text-capitalize"><span><i class="fa fa-envelope"></i>
+                                                    email :</span>
+                                                {{ agente.correo }}</a></li>
+                                    </ul>
+                                    <p class="mb-0 mt-3">
+                                        <a href="{{ agente.facebook }}"
+                                            class="btn btn-social btn-social-o facebook mr-1">
+                                            <i class="fa fa-facebook-f"></i>
+                                        </a>
+
+                                        <a href="{{ agente.linkedin }}"
+                                            class="btn btn-social btn-social-o linkedin mr-1">
+                                            <i class="fa fa-linkedin"></i>
+                                        </a>
+
+                                        <a href="{{ agente.instagram }}"
+                                            class="btn btn-social btn-social-o instagram mr-1">
+                                            <i class="fa fa-instagram"></i>
+                                        </a>
+
+                                        <a href="{{ agente.whatsapp }}"
+                                            class="btn btn-social btn-social-o whatsapp mr-1">
+                                            <i class="fa fa-whatsapp"></i>
+                                        </a>
+
+                                        <a href="{{ agente.youtube }}" class="btn btn-social btn-social-o youtube mr-1">
+                                            <i class="fa fa-youtube"></i>
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+</section>
+
+
+{% include calltoaction.html %}

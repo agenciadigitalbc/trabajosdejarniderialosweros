@@ -1,0 +1,43 @@
+<!-- NEARBY -->
+<div class="single__detail-features">
+    <h6 class="text-capitalize detail-heading">cerca</h6>
+    <div class="single__detail-features-nearby">
+        {% if page.education %}
+        <h6 class="text-capitalize"><span>
+                <i class="fa fa-building "></i></span>educación</h6>
+        {% endif %}
+        <ul class="list-unstyled">
+            <li>
+                {% if page.school %}<span>{{page.school}}</span>{% endif %}
+                {% if page.school_distance %}<p>{{page.school_distance}} km</p>{% endif %}
+            </li>
+            <li>
+                {% if page.school_2 %}<span>{{page.school_2}}</span>{% endif %}
+                {% if page.school_2_distance %}<p>{{page.school_2_distance}} km</p>{% endif %}
+            </li>
+            <li>
+                {% if page.school_3 %}<span>{{page.school_3}}</span>{% endif %}
+                {% if page.school_3_distance %}<p>{{page.school_3_distance}} km</p>{% endif %}
+            </li>
+        </ul>
+        {% if page.health_medicine %}
+        <h6 class="text-capitalize"><span><i class="fa fa-ambulance"></i></span>{{page.health_medicine}}
+        </h6>
+        {% endif %}
+        <ul class="list-unstyled">
+            <li>
+                {% if page.clinic %}<span>{{page.clinic}}</span>{% endif %}
+                {% if page.clinic_distance %}<p>{{page.clinic_distance}} km</p>{% endif %}
+            </li>
+            <li>
+                {% if page.clinic_2 %}<span>{{page.clinic_2}}</span>{% endif %}
+                {% if page.clinic_2_distance %}<p>{{page.clinic_2_distance}} km</p>{% endif %}
+            </li>
+            <li>
+                {% if page.clinic_3 %}<span>{{page.clinic_3}}</span>{% endif %}
+                {% if page.clinic_3_distance %}<p>{{page.clinic_3_distance}} km</p>{% endif %}
+            </li>
+        </ul>
+    </div>
+</div>
+<!-- END NEARBY -->

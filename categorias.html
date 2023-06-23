@@ -1,0 +1,43 @@
+---
+title: Categorias
+layout: default
+---
+
+<div class="row">
+    {% for category in site.categories %}
+    {% capture category_name %}{{ category | first }}{% endcapture %}
+    <div class="col-lg-4">
+        <div class="sticky-top">
+            <aside>
+                <div class="widget__sidebar">
+                    <div class="widget__sidebar__header">
+                        <h6 class="text-capitalize">{{ category_name }}</h6>
+                    </div>
+                    <div class="widget__sidebar__body">
+                        <!-- ONE -->
+                        {% for post in site.categories[category_name] %}
+                        <div class="widget__sidebar__body-img">
+                            <a href="{{post.url}}"><img src="{{ post.image }}" alt="{{post.title}}"
+                                    class="img-fluid"></a>
+                            <div class="widget__sidebar__body-heading">
+                                <h6 class="text-capitalize">
+                                    <a href="{{post.url}}">{{post.title}} </a>
+                                </h6>
+                            </div>
+                            <span class="badge badge-secondary p-1 text-capitalize mb-1">
+                                {% assign mes_index= post.date | date: "%-m" | minus: 1 %}
+                                {% assign mes = site.data.spanish.meses[mes_index] %}
+                                {{ post.date | date: "%-d" }} - {{ mes }} - {{ post.date | date: "%Y"}} | {{
+                                post.categories[0] | capitalize }}
+                            </span>
+                        </div>
+                        {% endfor %}
+
+
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </div>
+    {% endfor %}
+</div>

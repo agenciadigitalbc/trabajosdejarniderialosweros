@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    {% include head.html %}
+    {% include datos.html %}
+    {% include google-analytics.html %}
+</head>
+
+<body>
+
+    {% include header.html %}
+
+    <!-- LISTING LIST -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="single__blog-detail">
+                        <h1> {{page.title}} </h1>
+
+                        <div class="single__blog-detail-info">
+                            <ul class="list-inline">
+                                <li class="list-inline-item">
+                                    <figure class="image-profile">
+                                        <img src="{{page.author_image2}}" class="img-fluid" alt="{{page.author_name}}">
+                                    </figure>
+                                </li>
+                                <li class="list-inline-item">
+
+                                    <span>
+                                        por
+                                    </span>
+                                    <a href="{{page.author_url}}">
+                                        {{page.author}}
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <span class="text-dark text-capitalize ml-1">
+                                        {{page.date}}
+                                    </span>
+                                </li>
+
+                                <li class="list-inline-item">
+                                    <span class="text-dark text-capitalize ml-1">
+                                        en
+                                    </span>
+                                    <a href="/categorias.html">
+                                        {{page.categories[0]}}
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        {{ content }}
+
+                        <!-- TAGS -->
+                        <div class="blog__tags mb-4">
+                            <ul class="list-inline">
+
+                                <li class="list-inline-item">
+                                    <a href="#">
+                                        #property
+                                    </a>
+                                </li>
+
+                                <li class="list-inline-item">
+                                    <a href="#">
+                                        #real estate
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#">
+                                        #propiedades
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#">
+                                        #renta
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#">
+                                        #venta
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- END TAGS -->
+
+                        <!-- AUTHOR -->
+                        <!-- Profile author -->
+                        <div class="wrap__profile">
+                            <div class="wrap__profile-author">
+                                <figure>
+                                    <img src="{{page.author_image}}" alt="{{page.author_name}}"
+                                        class="img-fluid img-circle">
+                                </figure>
+                                <div class="wrap__profile-author-detail">
+                                    <div class="wrap__profile-author-detail-name">autor</div>
+                                    <a href="{{page.author_url}}">
+                                        <h5>{{page.author}}</h5>
+                                    </a>
+                                    <p></p>
+                                    <ul class="list-inline">
+                                        {% if page.facebook %}
+                                        <li class="list-inline-item">
+                                            <a href="{{page.facebook}}" class="btn btn-social btn-social-o facebook ">
+                                                <i class="fa fa-facebook"></i>
+                                            </a>
+                                        </li>{% endif %}
+                                        {% if page.twitter %}
+                                        <li class="list-inline-item">
+                                            <a href="{{page.twitter}}" class="btn btn-social btn-social-o twitter ">
+                                                <i class="fa fa-twitter"></i>
+                                            </a>
+                                        </li>{% endif %}
+                                        {% if page.instagram %}
+                                        <li class="list-inline-item">
+                                            <a href="{{page.instagram}}" class="btn btn-social btn-social-o instagram ">
+                                                <i class="fa fa-instagram"></i>
+                                            </a>
+                                        </li>{% endif %}
+                                        {% if page.whatsapp %}
+                                        <li class="list-inline-item">
+                                            <a href="{{page.whatsapp}}" class="btn btn-social btn-social-o whatsapp ">
+                                                <i class="fa fa-whatsapp"></i>
+                                            </a>
+                                        </li>{% endif %}
+                                        {% if page.telegram %}
+                                        <li class="list-inline-item">
+                                            <a href="{{page.telegram}}" class="btn btn-social btn-social-o telegram ">
+                                                <i class="fa fa-telegram"></i>
+                                            </a>
+                                        </li>{% endif %}
+                                        {% if page.linkedin %}
+                                        <li class="list-inline-item">
+                                            <a href="{{page.linkedin}}" class="btn btn-social btn-social-o linkedin ">
+                                                <i class="fa fa-linkedin"></i>
+                                            </a>
+                                        </li>{% endif %}
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END AUTHOR -->
+
+
+                        <!--div class="row">
+                            <div class="col-md-6">
+                                <div class="single_navigation-prev">
+                                    <a href="#">
+                                        <span>Anterior</span>
+
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="single_navigation-next text-left text-md-right">
+                                    <a href="#">
+                                        <span>Siguiente</span>
+
+                                    </a>
+                                </div>
+                            </div>
+                        </div-->
+                        <div class="clearfix"></div>
+
+                        <!-- COMMENTS -->
+                        <h6>Comentarios:</h6>
+                        <div id="disqus_thread"></div>
+                        <script>
+                            /**
+                            *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                            *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+                            /*
+                            var disqus_config = function () {
+                            this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+                            this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                            };
+                            */
+                            (function () { // DON'T EDIT BELOW THIS LINE
+                                var d = document, s = d.createElement('script');
+                                s.src = 'https://https-pacificsunrealestate-com-mx.disqus.com/embed.js';
+                                s.setAttribute('data-timestamp', +new Date());
+                                (d.head || d.body).appendChild(s);
+                            })();
+                        </script>
+                        <noscript>Please enable JavaScript to view the <a
+                                href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                        <!-- END COMMENTS -->
+                    </div>
+                </div>
+                <!-- WIDGET BLOG -->
+                <div class="col-lg-4">
+                    <div class="sticky-top">
+                        <aside>
+                            <div class="widget__sidebar">
+                                <div class="widget__sidebar__header">
+                                    <h6 class="text-capitalize">Categorias</h6>
+                                </div>
+                                <div class="widget__sidebar__body">
+                                    <ul class="list-unstyled">
+                                        {% for category in site.categories %}
+                                        {% capture category_name %}{{ category | first }}{% endcapture %}
+                                        <li>
+                                            <a href="/categorias.html" class="text-capitalize">
+                                                {{ category_name }}
+                                                <span class="badge badge-primary">{{site.categories[category_name] |
+                                                    size}}</span>
+                                            </a>
+                                        </li>
+                                        {% endfor %}
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </aside>
+                        <aside>
+                            <div class="widget__sidebar">
+                                <div class="widget__sidebar__header">
+                                    <h6 class="text-capitalize">Articulos Recientes</h6>
+                                </div>
+                                <div class="widget__sidebar__body">
+                                    <!-- ONE -->
+                                    {% for post in site.posts %}
+                                    <div class="widget__sidebar__body-img">
+                                        <a href="{{post.url}}"><img src="{{ post.image }}" alt="{{post.title}}"
+                                                class="img-fluid"></a>
+                                        <div class="widget__sidebar__body-heading">
+                                            <h6 class="text-capitalize">
+                                                <a href="{{post.url}}">{{post.title}} </a>
+                                            </h6>
+                                        </div>
+                                        <span class="badge badge-secondary p-1 text-capitalize mb-1">
+                                            {% assign mes_index= post.date | date: "%-m" | minus: 1 %}
+                                            {% assign mes = site.data.spanish.meses[mes_index] %}
+                                            {{ post.date | date: "%-d" }} - {{ mes }} - {{ post.date | date: "%Y"}} | {{
+                                            post.categories[0] | capitalize }}
+                                        </span>
+                                    </div>
+                                    {% endfor %}
+                                    <!-- TWO -->
+                                    <!--div class="widget__sidebar__body-img">
+                                        <img src="images/500x400.jpg" alt="" class="img-fluid">
+
+                                        <div class="widget__sidebar__body-heading">
+                                            <h6 class="text-capitalize">
+
+                                            </h6>
+
+                                        </div>
+                                        <span class="badge badge-secondary p-1 text-capitalize mb-1">May 08, 2019
+                                        </span>
+                                    </div-->
+                                    <!-- THREE -->
+                                    <!--div class="widget__sidebar__body-img">
+                                        <img src="images/500x400.jpg" alt="" class="img-fluid">
+
+                                        <div class="widget__sidebar__body-heading">
+                                            <h6 class="text-capitalize">
+                                                twe are experience more than 10 years
+                                            </h6>
+
+                                        </div>
+                                        <span class="badge badge-secondary p-1 text-capitalize mb-1">May 08, 2019
+                                        </span>
+                                    </div-->
+                                    <!-- FOUR -->
+                                    <!--div class="widget__sidebar__body-img">
+                                        <img src="images/500x400.jpg" alt="" class="img-fluid">
+
+                                        <div class="widget__sidebar__body-heading">
+                                            <h6 class="text-capitalize">
+                                                tips & trick in real estate
+                                            </h6>
+
+                                        </div>
+                                        <span class="badge badge-secondary p-1 text-capitalize mb-1">May 08, 2019
+                                        </span>
+                                    </div>
+
+                                    <div class="widget__sidebar__body-img">
+                                        <img src="images/500x400.jpg" alt="" class="img-fluid">
+
+                                        <div class="widget__sidebar__body-heading">
+                                            <h6 class="text-capitalize">
+                                                how buy real estate dream house
+                                            </h6>
+                                        </div>
+                                        <span class="badge badge-secondary p-1 text-capitalize mb-1">May 08, 2019
+                                        </span>
+                                    </div-->
+
+                                </div>
+                            </div>
+                        </aside>
+                        <aside>
+                            <div class="widget__sidebar">
+                                <div class="widget__sidebar__header">
+                                    <h6 class="text-capitalize">etiquetas</h6>
+                                </div>
+                                <div class="widget__sidebar__body">
+                                    <div class="blog__tags p-0">
+                                        <ul class="list-inline">
+
+                                            <li class="list-inline-item">
+                                                <a href="#">
+                                                    #property
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a href="#">
+                                                    #wfh
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a href="#">
+                                                    #estate
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a href="#">
+                                                    #real estate
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a href="#">
+                                                    #listing
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a href="#">
+                                                    #rent
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a href="#">
+                                                    #sell
+                                                </a>
+                                            </li>
+
+                                            <li class="list-inline-item">
+                                                <a href="#">
+                                                    #family
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a href="#">
+                                                    #happy
+                                                </a>
+                                            </li>
+
+                                            <li class="list-inline-item">
+                                                <a href="#">
+                                                    #agents
+                                                </a>
+                                            </li>
+
+                                            <li class="list-inline-item">
+                                                <a href="#">
+                                                    #promo
+                                                </a>
+                                            </li>
+
+
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </aside>
+                    </div>
+                </div>
+
+            </div>
+            <!-- END WIDGET BLOG -->
+        </div>
+    </section>
+    <!-- END LISTING LIST -->
+
+    {% include calltoaction.html %}
+
+    {% include footer.html %}
+
+</body>
+
+</html>

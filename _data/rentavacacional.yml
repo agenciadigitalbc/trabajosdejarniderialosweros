@@ -1,0 +1,153 @@
+- name : Studio Las Rosas
+  url : https://www.airbnb.com/rooms/719826036039907792?preview_for_ml=true&source_impression_id=p3_1678139276_mXFzsORmAeTFuO8y
+  image: /images/pacificsun/airbnb/studio-las-rosas.webp
+  location: El Sauzal, Baja California, México
+  baths: 1
+  beds: 1
+  rooms: 1
+  guests: 3
+  price: $130 USD
+- name : Estancia Los Amigos Room 3
+  url : https://www.airbnb.com/rooms/755911922614985565?preview_for_ml=true&source_impression_id=p3_1678139396_ejPZNkiGVZnRekS%2B
+  image: /images/pacificsun/airbnb/estancia-los-amigos-room-3.webp
+  location: Ensenada, Baja California, México
+  baths: 1
+  beds: 2
+  rooms: 1
+  guests: 4  
+  price: $135 USD
+- name : Casa Arenas
+  url : https://www.airbnb.com/rooms/39153247?preview_for_ml=true&source_impression_id=p3_1678139241_mDTcKV2FZYdxx4qq  
+  image: /images/pacificsun/airbnb/casa-arenas.webp
+  location: Ensenada, Baja California, México
+  baths: 1
+  beds: 2
+  rooms: 2
+  guests: 4
+  price: $82 USD 
+- name : Estancia Los Amigos Room 4
+  url : https://www.airbnb.com/rooms/614441234073269227?preview_for_ml=true&source_impression_id=p3_1678139267_nOgf1dU9UhuhVgc%2B
+  image: /images/pacificsun/airbnb/estancia-los-amigos-room-4.webp
+  location: Ensenada, Baja California, México
+  baths: 1
+  beds: 2
+  rooms: 1
+  guests: 4
+  price: $135 USD  
+- name : Great View Condo
+  url : https://www.airbnb.com/rooms/637940913952196875?preview_for_ml=true&source_impression_id=p3_1678139285_w%2FeOymgaYFr%2BYVBk
+  image: /images/pacificsun/airbnb/great-view.webp
+  location: Ensenada, Baja California, México
+  baths: 1
+  beds: 2
+  rooms: 2
+  guests: 4
+  price: $208 USD    
+- name : Studio Floresta
+  url : https://www.airbnb.com/rooms/19662319?preview_for_ml=true&source_impression_id=p3_1678139295_OOyn%2Bn6ybMneDoO6
+  image: /images/pacificsun/airbnb/studio-floresta.webp
+  location: Ensenada, Baja California, México
+  baths: 1
+  beds: 1
+  rooms: 1
+  guests: 2
+  price: $87 USD  
+- name : Estancia Los Amigos Room 5 
+  url : https://www.airbnb.com/rooms/614447088356689647?preview_for_ml=true&source_impression_id=p3_1678139258_GkbXMV0bZSDwIQVz
+  image: /images/pacificsun/airbnb/estancia-los-amigos-room-5.webp
+  location: Ensenada, Baja California, México
+  baths: 1
+  beds: 2
+  rooms: 1
+  guests: 4
+  price: $135 USD      
+- name : Medusas Apartment
+  url : https://www.airbnb.com/rooms/51385244?preview_for_ml=true
+  image: /images/pacificsun/airbnb/medusas-apartment.webp
+  location: Ensenada, Baja California, México
+  baths: 1
+  beds: 2
+  rooms: 2
+  guests: 4
+  price: $82 USD  
+- name : Casa Floresta
+  url : https://www.airbnb.com/rooms/16455546?preview_for_ml=true&source_impression_id=p3_1678139319_pqbtqBT%2BirzqbbzL
+  image: /images/pacificsun/airbnb/casa-floresta.webp
+  location: Ensenada, Baja California, México
+  baths: 2
+  beds: 2
+  rooms: 2
+  guests: 4
+  price: $132 USD  
+- name : Studio Medusas
+  url : https://www.airbnb.com/rooms/617567228105802435?preview_for_ml=true&source_impression_id=p3_1678139327_r9SwgVyrsRTjHxC8
+  image: /images/pacificsun/airbnb/studio-medusas.webp
+  location: Ensenada, Baja California, México
+  baths: 1
+  beds: 1
+  rooms: 1
+  guests: 2
+  price: $60 USD 
+- name : Great Location in Tourist Area
+  url : https://www.airbnb.com/rooms/50757504?preview_for_ml=true&source_impression_id=p3_1678139344_4SKXZFmnKVakjhsI
+  image: /images/pacificsun/airbnb/great-location.webp
+  location: Ensenada, Baja California, México
+  baths: 1
+  beds: 2
+  rooms: 1
+  guests: 4
+  price: $120 USD   
+- name : Suite1 Valle de Guadalupe 
+  url : https://www.airbnb.com/rooms/614423623699679478?preview_for_ml=true&source_impression_id=p3_1678139376_As5cvA%2BA8%2B44TOqF
+  image: /images/pacificsun/airbnb/suite-valle-de-guadalupe.webp
+  location: Ensenada, Baja California, México
+  baths: 1
+  beds: 1
+  rooms: 1
+  guests: 2
+  price: $135 USD  
+- name : Estancia Los Amigos Room 6
+  url : https://www.airbnb.com/rooms/614451193021331795?preview_for_ml=true&source_impression_id=p3_1678139386_200WUMTQ%2FmzkJV%2BP
+  image: /images/pacificsun/airbnb/estancia-los-amigos-room-6.webp
+  location: Ensenada, Baja California, México
+  baths: 1
+  beds: 2
+  rooms: 1
+  guests: 4
+  price: $135 USD
+- name : Great Location Condo
+  url : https://www.airbnb.com/rooms/52886211?preview_for_ml=true&source_impression_id=p3_1678139446_lOJ601h0gQxxnbbY
+  image: /images/pacificsun/airbnb/great-location-condo.webp
+  location: Ensenada, Baja California, México
+  baths: 2
+  beds: 3
+  rooms: 3
+  guests: 6
+  price: $131 USD
+- name : Cozy Studio Cibolas del Mar
+  url : https://www.airbnb.com/rooms/669574744290682303?preview_for_ml=true&source_impression_id=p3_1678139466_axIo4zZ9M5o9mAhN
+  image: /images/pacificsun/airbnb/cozy-studio.webp 
+  location: Ensenada, Baja California, México
+  baths: 1
+  beds: 1
+  rooms: 1
+  guests: 2
+  price: $115 USD 
+- name : Casa Vizcaino
+  url : https://www.airbnb.com/rooms/602906225424862384?preview_for_ml=true&source_impression_id=p3_1678139477_6%2BSW2Q7XQSlooGyu
+  image: /images/pacificsun/airbnb/casa-vizcaino.webp 
+  location: Ensenada, Baja California, México
+  baths: 2
+  beds: 4
+  rooms: 2
+  guests: 7
+  price: $115 USD 
+- name : Casita en Villas II
+  url : https://www.airbnb.com/rooms/587674080732563588?preview_for_ml=true&source_impression_id=p3_1678139491_q2lGAiKc%2BrrGolYV
+  image: /images/pacificsun/airbnb/casita-villas-II.webp 
+  location: Ensenada, Baja California, México
+  baths: 1
+  beds: 2
+  rooms: 2
+  guests: 4
+  price: $76 USD

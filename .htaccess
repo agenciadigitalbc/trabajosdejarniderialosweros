@@ -1,0 +1,9 @@
+
+RewriteEngine on
+
+RewriteOptions inherit
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP:X-Forwarded-SSL} !on
+RewriteCond %{HTTP_HOST} ^pacificsunrealestate\.com\.mx$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.pacificsunrealestate\.com\.mx$
+RewriteRule ^/?$ "https\:\/\/pacificsunrealestate\.com\.mx\/" [R=301,L]
