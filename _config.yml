@@ -1,21 +1,21 @@
-title: Pacific Sun Real Estate
+title: Trabajos de Jardineria los Weros
 email: info@pacificsunrealestate.com.mx
-phone1: +52-646-947-7802
-phone2: +1-209-843-1531
+phone1: +1-551-817-1918
+phone2: +1-551-817-1918
 schedule: Lun - Vie 10:00 - 18:00  /  Sabado 10:00 - 14:00
-address:  Av. Dr Pedro Loyola 193, 22887 Ensenada
-description: Pacific Sun Real Estate Somos un equipo dedicado a bienes raíces y alojamientos vacacionales, con más de 6 años de experiencia.
+address:  Nicolás Romero
+description: Todo lo relacionado a la construccion decoracion mantenimiento de jardines, fumigaciones , abonos, muros verticales, sistemas de riego.
 baseurl: "" 
 url: "https://pacificsunrealestate.com.mx" 
-google_analytics: G-77MT8S8LLL
+google_analytics: 
 lang: es-mx
 
 social:
-  name: Pacific Sun Real Estate
+  name: Trabajos de Jardineria los Weros
   links:
-facebook_username: https://www.facebook.com/pacificsunensenada
-instagram_username:  https://www.instagram.com/pacificsun_realestate
-youtube_username: https://www.youtube.com/@pacificsunrealestate
+facebook_username: https://www.facebook.com/edithernandezsolorio
+instagram_username:  https://www.facebook.com/edithernandezsolorio
+youtube_username: https://www.facebook.com/edithernandezsolorio
 
 # Build settings
 theme: minima
@@ -25,7 +25,7 @@ plugins:
   - jekyll-sitemap
 
 twitter:
-  username: CentroRosarito
+  username: Jardineria los Weros
   card: summary
   
 collections:
@@ -60,4 +60,4 @@ defaults:
         path: /images/pacificsun/og-img.webp
         height: 512
         width: 512
-      author: Rosarito Centro  
+      author: Jardineria los Weros 

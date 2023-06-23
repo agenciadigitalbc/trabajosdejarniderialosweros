@@ -8,7 +8,7 @@ curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
 
 $headers = array(
    "Accept: application/json",
-   "X-Authorization: oatmoueuqzy4snjk1zxvb63hwtosot"
+   "X-Authorization: key"
 );
 curl_setopt($curl, CURLOPT_HTTPHEADER, $headers);
 //for debug only!
