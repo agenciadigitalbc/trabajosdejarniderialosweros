@@ -1,0 +1,776 @@
+---
+title: Inicio
+layout: default
+---
+
+<!-- CAROUSEL -->
+<div class="slider-container">
+    <div class="container-slider-image-full  ">
+        <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
+            <ol class="carousel-indicators d-none">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active banner-max-height">
+                    <img class="d-block w-100" src="images/pacificsun/carrusel-1.webp" alt="Pacific Sun Real State">
+                    <div class="carousel-caption banner__slide-overlay d-flex h-100">
+                        <div class="carousel__content">
+                            <div class="container">
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-8 col-md-12 col-sm-12 text-center">
+                                        <div class="slider__content-title ">
+                                            <h2 data-animation="fadeInDown" data-delay=".2s" data-duration="1000ms"
+                                                class="text-white animated fadeInDown">
+                                                ¿Buscas invertir en Ensenada?</h2>
+                                            <p data-animation="fadeInUp" data-delay=".4s" data-duration="1000ms"
+                                                class="text-white animated fadeInUp">
+
+                                                Tu patrimonio en las mejores manos, vende tu propiedad fácil y rápido.
+                                            </p>
+                                            <a href="https://wa.me/12098431531" data-animation="fadeInUp"
+                                                data-delay=".6s" data-duration="1000ms"
+                                                class="btn btn-primary text-uppercase animated fadeInUp">
+                                                Contactanos
+                                                <i class="fa fa-angle-right arrow-btn "></i></a>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item banner-max-height">
+                    <img class="d-block w-100" src="images/pacificsun/carrusel-3.webp" alt="Second slide">
+                    <div class="carousel-caption banner__slide-overlay d-flex h-100">
+                        <div class="carousel__content">
+                            <div class="container">
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-8 col-md-12 col-sm-12 text-center">
+                                        <div class="slider__content-title ">
+                                            <h2 data-animation="animated fadeInDown"
+                                                class="text-white animated fadeInDown">
+                                                Sigue generando ingresos con tu propiedad</h2>
+                                            <p data-animation="animated fadeInUp" class="text-white animated fadeInUp ">
+
+                                                Conoce más sobre las rentas vacacionales.
+                                            </p>
+                                            <a href="https://wa.me/12098431531"
+                                                class="btn btn-primary text-uppercase animated fadeInUp">
+                                                contactanos
+                                                <i class="fa fa-angle-right arrow-btn "></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item banner-max-height">
+                    <img class="d-block w-100" src="images/pacificsun/carrusel-4.webp" alt="Third slide">
+                    <div class="carousel-caption banner__slide-overlay d-flex h-100">
+                        <div class="carousel__content">
+                            <div class="container">
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-8 col-md-12 col-sm-12 text-center">
+                                        <div class="slider__content-title ">
+                                            <h2 data-animation="animated fadeInDown"
+                                                class="text-white animated fadeInDown">
+                                                ¿Deseas vender una propiedad fácil y rápido?</h2>
+                                            <p data-animation="animated fadeInUp" class="text-white animated fadeInUp ">
+
+                                            </p>
+                                            <a href="https://wa.me/12098431531"
+                                                class="btn btn-primary text-uppercase animated fadeInUp">
+                                                contactanos
+                                                <i class="fa fa-angle-right arrow-btn "></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span> -->
+            <span class="carousel-control-nav-prev">
+                <i class="fa fa-2x fa-angle-left"></i>
+            </span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span> -->
+            <span class="carousel-control-nav-next">
+                <i class="fa fa-2x fa-angle-right"></i>
+            </span>
+        </a>
+    </div>
+</div>
+
+<div class="clearfix"></div>
+<!-- END CAROUSEL -->
+<!-- END CAROSUEL -->
+<div class="clearfix"></div>
+
+<!-- FEATURED PROPERTIES -->
+<section class="featured__property space-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-lg-6 mx-auto">
+                <div class="title__head">
+                    <h2 class="text-center text-capitalize">
+                        Casas en Venta
+                    </h2>
+                    <p class="text-center text-capitalize">
+
+                    </p>
+
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div id="propiedades" class="featured__property-carousel1 owl-carousel owl-theme">
+
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="featured__property-carousel owl-carousel owl-theme">
+                    {% for casa in site.casasenventa %}
+                    <div class="item">
+                        <!-- ONE -->
+                        <div class="card__image card__box">
+                            <div class="card__image-header h-250">
+                                <div class="ribbon text-uppercase">{{casa.operation}}</div>
+                                <img src="{{casa.image}}" alt="{{casa.title}}" class="img-fluid w100 img-transition">
+                                <div class="info"> for sale</div>
+                            </div>
+                            <div class="card__image-body">
+                                <span class="badge badge-primary text-capitalize mb-2">{{casa.type}}</span>
+                                <h6 class="text-capitalize">
+
+                                    <a href="{{casa.url}}">{{casa.title}}</a>
+                                </h6>
+
+                                <p class="text-capitalize">
+                                    <i class="fa fa-map-marker"></i>
+                                    {{casa.location}}
+                                </p>
+                                <ul class="list-inline card__content">
+                                    <li class="list-inline-item">
+
+                                        <span>
+                                            baños <br>
+                                            <i class="fa fa-bath"></i> {{casa.baths}}
+                                        </span>
+                                    </li>
+                                    <!--li class="list-inline-item">
+                                        <span>
+                                            camas <br>
+                                            <i class="fa fa-bed"></i> 
+                                        </span>
+                                    </li-->
+                                    <li class="list-inline-item">
+                                        <span>
+                                            habitaciones <br>
+                                            <i class="fa fa-inbox"></i> {{casa.rooms}}
+                                        </span>
+                                    </li>
+                                    {% if casa.area %}
+                                    <li class="list-inline-item">
+                                        <span>
+                                            area <br>
+                                            <i class="fa fa-map"></i> {{casa.area}} m²
+                                        </span>
+                                    </li>
+                                    {% endif %}
+                                </ul>
+                            </div>
+                            <div class="card__image-footer">
+                                <figure>
+                                    <img src="/images/pacificsun/200x200.webp" alt="{{site.title}}"
+                                        class="img-fluid rounded-circle">
+                                </figure>
+                                <ul class="list-inline my-auto">
+                                    <li class="list-inline-item">
+                                        <a href="{{casa.url}}">
+                                            Pacific Sun Real Estate
+                                        </a>
+                                    </li>
+                                </ul>
+                                <ul class="list-inline my-auto ml-auto">
+                                    <li class="list-inline-item ">
+                                        <h6>{{casa.price}}</h6>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- END FEATURED PROPERTIES -->
+
+<!-- RECENT PROPERTY -->
+<section class="featured__property bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-lg-6 mx-auto">
+                <div class="title__head">
+                    <h2 class="text-center text-capitalize">
+                        renta vacacional
+                    </h2>
+                    <p class="text-center text-capitalize">Si buscas un lugar para vacacionar tenemos el ideal para ti.
+                        <br> Estamos seguros que Ensenada te encantará.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+        <div class="featured__property-carousel owl-carousel owl-theme">
+
+            {% for renta in site.data.rentavacacional %}
+            <div class="item">
+                <!-- ONE -->
+                <div class="card__image card__box">
+                    <div class="card__image-header h-250">
+                        <div class="ribbon text-uppercase">Renta</div>
+                        <img src="{{renta.image}}" alt="{{renta.name}}" class="img-fluid w100 img-transition">
+                        <div class="info"> {{renta.name}}</div>
+                    </div>
+                    <div class="card__image-body">
+                        <span class="badge badge-primary text-capitalize mb-2">Renta Vacacional</span>
+                        <h6 class="text-capitalize">
+                            {{renta.name}}
+                        </h6>
+
+                        <p class="text-capitalize">
+                            <i class="fa fa-map-marker"></i>
+                            {{renta.location}}
+                        </p>
+                        <ul class="list-inline card__content">
+                            <li class="list-inline-item">
+
+                                <span>
+                                    baños <br>
+                                    <i class="fa fa-bath"></i> {{renta.baths}}
+                                </span>
+                            </li>
+                            <li class="list-inline-item">
+                                <span>
+                                    camas <br>
+                                    <i class="fa fa-bed"></i> {{renta.beds}}
+                                </span>
+                            </li>
+                            <li class="list-inline-item">
+                                <span>
+                                    habitaciones <br>
+                                    <i class="fa fa-inbox"></i> {{renta.rooms}}
+                                </span>
+                            </li>
+                            <li class="list-inline-item">
+                                <span>
+                                    invitados <br>
+                                    <i class="fa fa-users"></i> {{renta.guests}}
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card__image-footer">
+                        <figure>
+                            <img src="images/pacificsun/logo-airbnb.webp" alt="Airbnb" class="img-fluid rounded-circle">
+                        </figure>
+                        <ul class="list-inline my-auto">
+                            <li class="list-inline-item pt-2">
+                                <a href="{{renta.url}}">
+                                    Reserva Aquí
+                                </a>
+
+                            </li>
+
+                        </ul>
+                        <ul class="list-inline my-auto ml-auto">
+                            <li class="list-inline-item ">
+
+                                <h6> {{renta.price}} </h6>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+<!-- END RECENT PROPERTY -->
+
+<!-- FEATURED PROPERTIES -->
+<section class="featured__property space-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-lg-6 mx-auto">
+                <div class="title__head">
+                    <h2 class="text-center text-capitalize">
+                        Renta a largo Plazo
+                    </h2>
+                    <p class="text-center text-capitalize"></p>
+
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="featured__property-carousel2 owl-carousel owl-theme" id="rentas">
+                    {% for casa in site.casasenrenta %}
+                    <div class="item">
+                        <!-- ONE -->
+                        <div class="card__image card__box">
+                            <div class="card__image-header h-250">
+                                <div class="ribbon text-uppercase">{{casa.operation}}</div>
+                                <img src="{{casa.image}}" alt="{{casa.title}}" class="img-fluid w100 img-transition">
+                                <div class="info">{{casa.operation_sale_rent}}</div>
+                            </div>
+                            <div class="card__image-body">
+                                <span class="badge badge-primary text-capitalize mb-2">{{casa.type}}</span>
+                                <h6 class="text-capitalize">
+
+                                    <a href="{{casa.url}}">{{casa.title}}</a>
+                                </h6>
+
+                                <p class="text-capitalize">
+                                    <i class="fa fa-map-marker"></i>
+                                    {{casa.location}}
+                                </p>
+                                <ul class="list-inline card__content">
+                                    <li class="list-inline-item">
+
+                                        <span>
+                                            baños <br>
+                                            <i class="fa fa-bath"></i> {{casa.baths}}
+                                        </span>
+                                    </li>
+                                    <!--li class="list-inline-item">
+                                        <span>
+                                            camas <br>
+                                            <i class="fa fa-bed"></i> 
+                                        </span>
+                                    </li-->
+                                    <li class="list-inline-item">
+                                        <span>
+                                            habitaciones <br>
+                                            <i class="fa fa-inbox"></i> {{casa.rooms}}
+                                        </span>
+                                    </li>
+                                    {% if casa.area %}
+                                    <li class="list-inline-item">
+                                        <span>
+                                            area <br>
+                                            <i class="fa fa-map"></i> {{casa.area}} m²
+                                        </span>
+                                    </li>
+                                    {% endif %}
+                                </ul>
+                            </div>
+                            <div class="card__image-footer">
+                                <figure>
+                                    <img src="/images/pacificsun/200x200.webp" alt="{{site.title}}"
+                                        class="img-fluid rounded-circle">
+                                </figure>
+                                <ul class="list-inline my-auto">
+                                    <li class="list-inline-item">
+                                        <a href="{{casa.url}}">
+                                            Pacific Sun Real Estate
+                                        </a>
+                                    </li>
+                                </ul>
+                                <ul class="list-inline my-auto ml-auto">
+                                    <li class="list-inline-item ">
+                                        <h6>{{casa.price}}</h6>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+
+                    
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!-- END FEATURED PROPERTIES -->
+
+<!-- ABOUT -->
+<section class="home__about bg-theme-v4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7">
+                <div class="title__leading">
+                    <h2 class="text-capitalize">Nuestros servicios</h2>
+                    <h6 class="text-uppercase">Venta</h6>
+                    <p>
+                        Contamos con una gran variedad de propiedades disponibles entre casas, terrenos, departamentos de uso habitacional y comercial.
+                        Te ayudamos a encontrar la propiedad ideal dependiendo de tus necesidades y presupuesto.
+                        Te asesoramos con tu crédito bancario, Infonavit, o de cualquier dependencia que sea de tu preferencia.
+                    </p>
+                    <h6 class="text-uppercase">Renta a largo Plazo</h6>
+                    <p>Ya sea que busques un departamento, casa o local comercial te podremos ayudar.
+                        Renta una propiedad con la confianza de que estarás en las mejores manos.</p>
+                        <h6 class="text-uppercase">Renta Vacacional</h6>
+                        <p>Si buscas un lugar para vacacionar tenemos el ideal para ti.
+                            Estamos seguros que Ensenada te encantará.</p>
+                            <h6 class="text-uppercase">Soy Propietario</h6>
+                            <p>Contáctanos, tenemos muchas opciones para generar rendimiento con tu propiedad</p>
+                    <a href="nosotros.html" class="btn btn-primary mt-3 text-capitalize"> Conócenos
+                        <i class="fa fa-angle-right ml-3 "></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- TESTIMONIAL -->
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-lg-6 mx-auto">
+                <div class="title__head">
+                    <h2 class="text-center text-capitalize">
+                        Testimonios
+                    </h2>
+                    <p class="text-center text-capitalize">Lo que dicen nuestros clientes de nosotros.</p>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="testimonial owl-carousel owl-theme">
+            <!-- TESTIMONIAL -->
+            {% for testimonio in site.data.testimonio limit:3 %}
+            <div class="item testimonial__block">
+                <div class="testimonial__block-card bg-reviews">
+                    <p>
+                        {{testimonio.review}}
+                    </p>
+                </div>
+                <div class="testimonial__block-users">
+                    <div class="testimonial__block-users-img">
+                        <img src="{{testimonio.image}}" alt="" class="img-fluid">
+                    </div>
+                    <div class="testimonial__block-users-name">
+                        {{testimonio.owner_name}} <br>
+                        <span> {{testimonio.ownership}} </span>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+            <!-- END TESTIMONIAL -->
+        </div>
+    </div>
+</section>
+<!-- END TESTIMONIAL -->
+
+<!-- BLOG -->
+<section class="blog__home bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-lg-6 mx-auto">
+                <div class="title__head">
+                    <h2 class="text-center text-capitalize">
+                        Articulos mas recientes
+                    </h2>
+                    <p class="text-center text-capitalize">Aprende a invertir en bienes raíces con nuestros expertos.
+                    </p>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="row">
+
+            {% for post in site.posts limit:3 %}
+
+            <div class="col-md-4">
+                <!-- BLOG  -->
+                <div class="card__image">
+                    <div class="card__image-header h-250">
+                        <img src="{{ post.image }}" alt="{{ post.title }}" class="img-fluid w100 img-transition">
+                        <div class="info"> {{post.categories[0]}}</div>
+                    </div>
+                    <div class="card__image-body">
+                        <!-- <span class="badge badge-secondary p-1 text-capitalize mb-3">May 08, 2019 </span> -->
+                        <h6 class="text-capitalize">
+                            <a href="{{post.url}}">{{post.title}} </a>
+                        </h6>
+                        <p class=" mb-0">
+
+                        </p>
+
+                    </div>
+                    <div class="card__image-footer">
+                        <figure>
+                            <img src="{{post.author_image}}" alt="{{ post.author }}" class="img-fluid rounded-circle">
+                        </figure>
+                        <ul class="list-inline my-auto">
+                            <li class="list-inline-item ">
+                                <a href="#">
+                                    {{ post.author }}
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="list-inline my-auto ml-auto">
+                            <li class="list-inline-item ">
+                                <a href="{{post.url}}" class="btn btn-sm btn-primary "><small class="text-white ">Leer
+                                        más <i class="fa fa-angle-right ml-1"></i></small></a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <!-- END BLOG -->
+            </div>
+
+            {% endfor %}
+
+        </div>
+    </div>
+</section>
+<!-- END BLOG -->
+
+{% include calltoaction.html %}
+
+
+<script>
+    const contenedor = document.getElementById('propiedades');
+    const rentas = document.getElementById('rentas');
+
+    const url = 'https://pacificsunrealestate.com.mx/api.php';
+
+    function createNode(element) {
+        return document.createElement(element);
+    }
+
+    function append(parent, el) {
+        return parent.appendChild(el);
+    }
+
+    function createElementFromHTML(htmlString) {
+        var div = document.createElement('div');
+        div.innerHTML = htmlString.trim();
+
+        // Change this to div.childNodes to support multiple top-level nodes.
+        return div.firstChild;
+    }
+
+    fetch(url)
+        .then((resp) => resp.json())
+        .then(function (data) {
+
+            let html = data.content.filter(p => p.operations[0].type == "sale").map(
+                propiedad =>
+                    `<div class="item">
+                            <div class="card__image card__box">
+                                <div class="card__image-header h-250">
+                                    <div class="ribbon text-uppercase">Destacada</div>
+                                    <img src="${propiedad.title_image_thumb}" alt="" class="img-fluid w100 img-transition">
+                                    <div class="info"> ${propiedad.property_type}</div>
+                                </div>
+                                <div class="card__image-body">
+                                    <span class="badge badge-primary text-capitalize mb-2">${propiedad.property_type}</span>
+                                    <h6 class="text-capitalize">
+                                        <a  href="${'propiedad.html?id=' + propiedad.public_id}" >${propiedad.title}</a>
+                                    </h6>
+                                    <p class="text-capitalize">
+                                        <i class="fa fa-map-marker"></i>
+                                        ${propiedad.location}
+                                    </p>
+                                    <ul class="list-inline card__content">
+                                        <li class="list-inline-item">
+                                            <span>
+                                                baños <br>
+                                                <i class="fa fa-bath"></i> ${propiedad.bathrooms == null ? '' : propiedad.bathrooms}
+                                            </span>
+                                        </li>
+                                        <!--li class="list-inline-item">
+                                            <span>
+                                                habitaciones <br>
+                                                <i class="fa fa-bed"></i>
+                                            </span>
+                                        </li-->
+                                        <li class="list-inline-item">
+                                            <span>
+                                                habitaciones <br>
+                                                <i class="fa fa-inbox"></i> ${propiedad.bedrooms == null ? '' : propiedad.bedrooms}
+                                            </span>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <span>
+                                                area <br>
+                                                <i class="fa fa-map"></i> ${propiedad.lot_size == null ? '' : propiedad.lot_size} m²
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="card__image-footer">
+                                    <figure>
+                                        <img src="/images/pacificsun/200x200.webp" alt="{{site.title}}" class="img-fluid rounded-circle">
+                                    </figure>
+                                    <ul class="list-inline my-auto">
+                                        <li class="list-inline-item pt-2">
+                                            <a href="#">${propiedad.agent}</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="list-inline my-auto ml-auto">
+                                        <li class="list-inline-item ">
+                                            <h6>${propiedad.operations[0].formatted_amount} ${propiedad.operations[0].currency}</h6>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        `).join('');
+            contenedor.innerHTML = html;
+
+
+            let htmlRentas = data.content.filter(p => p.operations[0].type == "rental").map(
+                propiedad =>`
+                <div class="item">
+                        <div class="card__image card__box">
+                            <div class="card__image-header h-250">
+                                <div class="ribbon text-uppercase">Renta</div>
+                                <img src="${propiedad.title_image_thumb}" alt="${propiedad.title}" class="img-fluid w100 img-transition">
+                                <div class="info">${propiedad.property_type}</div>
+                            </div>
+                            <div class="card__image-body">
+                                <span class="badge badge-primary text-capitalize mb-2">${propiedad.property_type}</span>
+                                <h6 class="text-capitalize">
+
+                                    <a href="${'propiedad.html?id=' + propiedad.public_id}">${propiedad.title}</a>
+                                </h6>
+
+                                <p class="text-capitalize">
+                                    <i class="fa fa-map-marker"></i>
+                                    ${propiedad.location}
+                                </p>
+                                <ul class="list-inline card__content">
+                                    <li class="list-inline-item">
+
+                                        <span>
+                                            baños <br>
+                                            <i class="fa fa-bath"></i> ${propiedad.bathrooms == null ? '' : propiedad.bathrooms}
+                                        </span>
+                                    </li>
+                                    <!--li class="list-inline-item">
+                                        <span>
+                                            camas <br>
+                                            <i class="fa fa-bed"></i> ${propiedad.bedrooms == null ? '' : propiedad.bedrooms}
+                                        </span>
+                                    </li-->
+                                    <li class="list-inline-item">
+                                        <span>
+                                            habitaciones <br>
+                                            <i class="fa fa-inbox"></i> {{casa.rooms}}
+                                        </span>
+                                    </li>
+                                    {% if casa.area %}
+                                    <li class="list-inline-item">
+                                        <span>
+                                            area <br>
+                                            <i class="fa fa-map"></i> ${propiedad.lot_size == null ? '' : propiedad.lot_size} m²
+                                        </span>
+                                    </li>
+                                    {% endif %}
+                                </ul>
+                            </div>
+                            <div class="card__image-footer">
+                                <figure>
+                                    <img src="/images/pacificsun/200x200.webp" alt="{{site.title}}"
+                                        class="img-fluid rounded-circle">
+                                </figure>
+                                <ul class="list-inline my-auto">
+                                    <li class="list-inline-item">
+                                        <a href="${'propiedad.html?id=' + propiedad.public_id}">
+                                            Pacific Sun Real Estate
+                                        </a>
+                                    </li>
+                                </ul>
+                                <ul class="list-inline my-auto ml-auto">
+                                    <li class="list-inline-item ">
+                                        <h6>${propiedad.operations[0].formatted_amount} ${propiedad.operations[0].currency}</h6>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>`
+                   ).join('');
+            rentas.innerHTML += htmlRentas;
+
+            $(".featured__property-carousel1").length && $(".featured__property-carousel1")
+                .owlCarousel(
+                    {
+                        loop: !0,
+                        margin: 30,
+                        dots: !0,
+                        nav: !1,
+                        rtl: !1,
+                        autoplayHoverPause: !1,
+                        autoplay: !0,
+                        singleItem: !0,
+                        smartSpeed: 1200,
+                        navText: ['<i class="fa fa-arrow-left"></i>', '<i class="fa fa-arrow-right"></i>'],
+                        responsive: {
+                            0: { items: 1, center: !1 },
+                            480: { items: 1, center: !1 },
+                            600: { items: 1, center: !1 },
+                            768: { items: 2 },
+                            992: { items: 2 },
+                            1200: { items: 2 },
+                            1366: { items: 3 },
+                            1400: { items: 3 }
+                        }
+                    });
+
+                    $(".featured__property-carousel2").length && $(".featured__property-carousel2")
+                .owlCarousel(
+                    {
+                        loop: !0,
+                        margin: 30,
+                        dots: !0,
+                        nav: !1,
+                        rtl: !1,
+                        autoplayHoverPause: !1,
+                        autoplay: !0,
+                        singleItem: !0,
+                        smartSpeed: 1200,
+                        navText: ['<i class="fa fa-arrow-left"></i>', '<i class="fa fa-arrow-right"></i>'],
+                        responsive: {
+                            0: { items: 1, center: !1 },
+                            480: { items: 1, center: !1 },
+                            600: { items: 1, center: !1 },
+                            768: { items: 2 },
+                            992: { items: 2 },
+                            1200: { items: 2 },
+                            1366: { items: 3 },
+                            1400: { items: 3 }
+                        }
+                    });
+
+        })
+        .catch(function (error) {
+            console.log(error);
+        });
+</script>
