@@ -57,7 +57,7 @@ defaults:
       lang: "es-mx"
       lazy: true
       image: 
-        path: /images/pacificsun/og-img.webp
-        height: 512
-        width: 512
+        path: /trabajosdejarniderialosweros/favicon/og-image.jpg
+        height: 279
+        width: 279
       author: Jardineria los Weros 
